@@ -7,3 +7,8 @@
   grid-template-rows: repeat(2, 50px);
       grid-template-areas: "home home" "buy loop" "experience about";
 }
+
+.wrapper .conte1, .wrapper .conte2, .wrapper .conte3, .wrapper .conte4, .wrapper .conte5 {
+  background-color: red;
+  border: 1.5px dashed grey;
+}

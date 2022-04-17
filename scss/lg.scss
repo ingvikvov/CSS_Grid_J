@@ -4,4 +4,7 @@
     .grid_content {
         @extend %grid_wrap;
     }
-}
+    .conte1, .conte2, .conte3, .conte4, .conte5 {
+        @extend %colo_blo;
+    }
+} 
