@@ -34,7 +34,10 @@ function add_or_del () {
             get kg_1 () {return this.kx_1 + this.kh_2}
         };
         if(kh_2.hasOwnProperty("kx_1") == true && kh_2.propertyIsEnumerable("kx_1") == true) {
-            Object.defineProperty();
+            Object.defineProperty(kh_2, "kx_2", {value:150, writable:true, enumerable:true, configurable:true});
+            if(kh_2.hasOwnProperty("kx_2") == true && kh_2.kx_1 == 10) {
+                document.write(kh_2.kg_1);
+            }
         }
-    }     
+    }  
 }
