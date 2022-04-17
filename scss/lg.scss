@@ -1,0 +1,7 @@
+@import "sampl/gri1.scss";
+
+.wrapper {
+    .grid_content {
+        @extend %grid_wrap;
+    }
+}

@@ -1,0 +1,8 @@
+%grid_wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(2, 50px);
+    grid-template-areas: "home home"
+                         "buy loop"
+                         "experience about";
+}
