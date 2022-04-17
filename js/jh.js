@@ -7,10 +7,29 @@ function add_or_del () {
                 usi1_ag:0
             }
         };
+
+        var usna_i1 = {
+            us_n1:{
+                us_nm1:"Igo",
+                us_sr1:"Romanen",
+                us_ag1:"19"
+            }
+        }
+        
         Object.defineProperty(us_i, "us_i2", {value:0, writable:true, enumerable:true, configurable:true});
         if(us_i.hasOwnProperty("us_i2") == true && us_i.us_i1.usi1_nm instanceof Number == true) {
             if(confirm("Можете войти, или зарегестрироваться")) {
-    
+                if(confirm("Войти")) {
+                    if(us_i.us_i1.usi1_nm == us_i.us_i1.usi1_ag && us_i.hasOwnProperty("us_i1") == true) {
+                        var us_un1;
+                        var us_sr1;
+                        var us_ag1;
+                        us_un1 = prompt("Введите ваше им");
+                        if(us_un1 == usna_i1.us_n1.us_nm1 && us_un1 == "Igo") {
+
+                        } else if(us_un1 != usna_i1.us_n1.us_nm1 && us_un1 != "Igo") throw new Error("У вас ошибка, поле должно быть зап");
+                    }
+                }
             } else 
                   if(confirm("Зарегестрироватся")) {
     
