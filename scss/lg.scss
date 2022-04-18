@@ -1,2 +1,50 @@
 @import "bloc.scss";
 
+body {
+    height: 3000px;
+    &::-webkit-scrollbar {
+        @extend %gri_scr;
+    }
+    &::-webkit-scrollbar-thumb {
+        @extend %gri_scrth;
+        &:hover {
+            background-color: darkblue;
+        }
+    }
+    .wrapper {
+        .grid_content {
+            display: grid;
+            grid-template-columns: 1fr;
+            @extend %gri_conte;
+            .na {
+                @extend %gri_na;
+                .na_1, .na_2, .na_3, .na_4, .na_5 {
+                    background-color: red;
+                    border: 1.5px dashed grey;
+                    list-style: none;
+                }
+                .na_1 {
+                    grid-area: home;
+                    transition: 0.5s;
+                }
+    
+                .na_2 {
+                    grid-area: buy;
+                }
+    
+                .na_3 {
+                    grid-area: loop;
+                }
+    
+                .na_4 {
+                    grid-area: experience;
+                }
+    
+                .na_5 {
+                    grid-area: about;
+                }
+            }
+        }
+    }
+}
+

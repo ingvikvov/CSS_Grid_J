@@ -26,7 +26,10 @@ function add_or_del () {
                         var us_ag1;
                         us_un1 = prompt("Введите ваше им");
                         if(us_un1 == usna_i1.us_n1.us_nm1 && us_un1 == "Igo") {
+                            us_sr1 = prompt("Введите вашу фамили");
+                            if(us_sr1 == usna_i1.us_n1.us_sr1 && us_sr1 == "Romanen") {
 
+                            } else if(us_sr1 != usna_i1.us_n1.us_sr1 && us_sr1 != "Romanen") throw new Error("У вас ошибка, поле должно быть запо");
                         } else if(us_un1 != usna_i1.us_n1.us_nm1 && us_un1 != "Igo") throw new Error("У вас ошибка, поле должно быть зап");
                     }
                 }

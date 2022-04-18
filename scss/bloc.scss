@@ -1,0 +1,36 @@
+%gri_conte {
+    display: grid;
+    grid-template-columns: minmax(15px, 1fr);
+    text-align: center;
+}
+
+%gri_na {
+    display: grid;
+    grid-template-columns: minmax(15px, 150px) minmax(15px, 150px) minmax(15px, 150px) minmax(15px, 150px) minmax(15px, 150px);
+    grid-template-rows: minmax(15px, 50px) minmax(15px, 50px);
+    grid-template-areas: "home home"
+                          "buy loop"
+                          "experience about";
+    justify-self: end;
+}
+
+%gri_scr {
+    width: 13px;
+    height: 5px;
+    background-color: transparent;
+}
+
+%gri_scrth {
+    border-radius: 10px;
+    background-color: red;
+    transition: 0.5s;
+}
+
+%gri_med {
+    display: grid;
+    grid-template-columns: minmax(15px, 150px) minmax(15px, 150px) minmax(15px, 150px) minmax(15px, 150px) minmax(15px, 150px);
+    grid-template-rows: minmax(15px, 50px) minmax(15px, 50px);
+    grid-template-areas: "home buy loop experience about";
+    justify-self: end;
+
+}
