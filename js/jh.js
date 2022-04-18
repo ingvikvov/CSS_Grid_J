@@ -26,7 +26,7 @@ function add_or_del () {
                         var us_ag1;
                         us_un1 = prompt("Введите ваше им");
                         if(us_un1 == usna_i1.us_n1.us_nm1 && us_un1 == "Igo") {
-                            us_sr1 = prompt("Введите вашу фамили");
+                            us_sr1 = prompt("Введите вашу фамили")
                             if(us_sr1 == usna_i1.us_n1.us_sr1 && us_sr1 == "Romanen") {
                                 us_ag1 = prompt("Введите вашу фамили");
                                 if(us_ag1 == usna_i1.us_n1.us_nm1 && us_ag1 == "19") {
@@ -42,7 +42,38 @@ function add_or_del () {
                                             if(us_p2 == us_pj1.us_i1de && us_pj1.hasOwnProperty("us_i1de") == true) {
                                                 if(confirm("Вы можете посмотреть дескрипторы сво")) {
                                                     if(confirm("Выбирите объек")) {
-                                                        
+                                                        if(confirm("Объект выбора i")) {
+
+                                                        } else 
+                                                              if(confirm("Объект выбора id скопирова")) {
+                                                                  var us_i3 = Object.create(usna_i1);
+                                                                  if(us_i3.hasOwnProperty("us_n1.us_nm1") == true && usna_i1.us_n1.us_nm1 == us_i3.us_n1.us_nm1) {
+                                                                      var lg_1 = {
+                                                                          kg_2:10, 
+                                                                          kg_3:30
+                                                                      };
+                                                                      if(lg_1.hasOwnProperty("kg_2") == true && lg_1.kg_2 == 10) {
+                                                                          if(confirm("Вот дескриптор объе" + Object.getOwnPropertyDescriptor(lg_1, "kg_2"))) {
+                                                                              if(confirm("Вас устраивае")) {
+                                                                                  if(confirm("Вот ваш дескри" + Object.getOwnPropertyDescriptor(lg_1, "kg_3"))) {
+
+                                                                                  } else 
+                                                                                        
+                                                                              } else 
+                                                                                    if(confirm("Можете измени")) {
+                                                                                        if(confirm("Введите valu")) {
+                                                                                            var us_iv;
+                                                                                            us_iv = prompt("Введите значен");
+                                                                                            Object.defineProperty(lg_1, "kg_4", {value:19, writable:true, enumerable:true, configurable:true});
+                                                                                            if(lg_1.hasOwnProperty("kg_4") == true && lg_1.hasOwnProperty("kg_2") == true) {
+                                                                                                if("Вот ваш дескрипто" + Object.getOwnPropertyDescriptor(lg_1, "kg_2")) {
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                          }
+                                                                  }
+                                                              }
                                                     }
                                                 }
                                             }
