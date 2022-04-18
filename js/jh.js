@@ -28,7 +28,27 @@ function add_or_del () {
                         if(us_un1 == usna_i1.us_n1.us_nm1 && us_un1 == "Igo") {
                             us_sr1 = prompt("Введите вашу фамили");
                             if(us_sr1 == usna_i1.us_n1.us_sr1 && us_sr1 == "Romanen") {
-
+                                us_ag1 = prompt("Введите вашу фамили");
+                                if(us_ag1 == usna_i1.us_n1.us_nm1 && us_ag1 == "19") {
+                                    var us_pj1 = {
+                                        us_i1de: "190",
+                                        us_i1od: "175",
+                                        us_i1op: "135"
+                                    };
+                                    if(us_pj1.hasOwnProperty("us_i1de") == true && us_pj1.hasOwnProperty("us_i1od") == true) {
+                                        if(confirm("Введите паро"))  {
+                                            var us_p2;
+                                            us_p2 = prompt("Введите паро");
+                                            if(us_p2 == us_pj1.us_i1de && us_pj1.hasOwnProperty("us_i1de") == true) {
+                                                if(confirm("Вы можете посмотреть дескрипторы сво")) {
+                                                    if(confirm("Выбирите объек")) {
+                                                        
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                } else if(us_ag1 != usna_i1.us_n1.us_nm1 && us_ag1 != "19") throw new Error("У вас ошибка, поле должно быть звполн")
                             } else if(us_sr1 != usna_i1.us_n1.us_sr1 && us_sr1 != "Romanen") throw new Error("У вас ошибка, поле должно быть запо");
                         } else if(us_un1 != usna_i1.us_n1.us_nm1 && us_un1 != "Igo") throw new Error("У вас ошибка, поле должно быть зап");
                     }
